@@ -476,12 +476,47 @@ $(function () {
         volume: Number('0.7'),
         listFolded: 'false' === 'true',
         listMaxHeight: '',
-        audio: JSON.parse('[{"name":"小毛驴","artist":"吴婉婷","url":"/medias/music/xiaomaolv.mp3","cover":"/medias/music/avatars/wuwanting.jpg"},{"name":"旁观者","artist":"朱正廷","url":"/medias/music/pangguanzhe.mp3","cover":"/medias/music/avatars/pangguanzhe.jpg"},{"name":"越单纯越幸福","artist":"王筝","url":"/medias/music/yuedanchunyuexingfu.mp3","cover":"/medias/music/avatars/yuedanchunyuexingfu.jpg"},{"name":"我们都是好孩子","artist":"王筝","url":"/medias/music/womendoushihaohaizi.mp3","cover":"/medias/music/avatars/womendoushihaohaizi.jpg"},{"name":"多幸运","artist":"韩安旭","url":"/medias/music/duoxingyun.mp3","cover":"/medias/music/avatars/duoxingyun.jpg"},{"name":"记事本","artist":"周传雄","url":"/medias/music/jishiben.mp3","cover":"/medias/music/avatars/jishiben.jpg"}]')
+        audio: JSON.parse('[{"name":"越单纯越幸福","artist":"王筝","url":"/medias/music/yuedanchunyuexingfu.mp3","cover":"/medias/music/avatars/yuedanchunyuexingfu.jpg"},{"name":"我们都是好孩子","artist":"王筝","url":"/medias/music/womendoushihaohaizi.mp3","cover":"/medias/music/avatars/womendoushihaohaizi.jpg"},{"name":"多幸运","artist":"韩安旭","url":"/medias/music/duoxingyun.mp3","cover":"/medias/music/avatars/duoxingyun.jpg"},{"name":"记事本","artist":"周传雄","url":"/medias/music/jishiben.mp3","cover":"/medias/music/avatars/jishiben.jpg"}]')
     });
 });
 </script>
                     
 
+                    
+                    <link rel="stylesheet" href="/libs/dplayer/DPlayer.min.css">
+<div class="video-player">
+    
+    <div class="title center-align">
+        <i class="fa fa-video-camera"></i>&nbsp;&nbsp;火影忍者 - 野原琳
+    </div>
+    
+    <div class="row">
+        <div class="col l8 offset-l2 m10 offset-m1 s12">
+            <div id="dplayer" class="dplayer-video"
+                    ></div>
+        </div>
+    </div>
+</div>
+
+<script src="/libs/dplayer/DPlayer.min.js"></script>
+<script>
+    $(function () {
+        new DPlayer({
+            container: document.getElementById('dplayer'),
+            autoplay: 'true' === 'true',
+            theme: '#42b983',
+            loop: 'true' === 'true',
+            lang: 'zh-CN' === 'zh-CN' ? 'zh-cn' : 'en',
+            preload: 'auto',
+            volume: Number('0.7'),
+            video: {
+                url: '/medias/video/yeyuanlin.mp4',
+                pic: '',
+                thumbnails: ''
+            }
+        });
+    });
+</script>
                     
 
                     <div id="recommend-sections" class="recommend">
@@ -508,7 +543,7 @@ $(function () {
                         <div class="card-image">
                             
                             
-                            <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="java反射技术">
+                            <img src="/medias/featureimages/5.jpg" class="responsive-img" alt="java反射技术">
                             
                             <span class="card-title">java反射技术</span>
                         </div>
