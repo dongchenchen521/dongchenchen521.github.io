@@ -1,10 +1,5 @@
 'use strict';
 
-<script>
-if ('serviceWorker' in navigator) {
- navigator.serviceWorker.register('/sw.js');
-}
-</script>
 
 const version = 'v20160443';
 const __DEVELOPMENT__ = false;
